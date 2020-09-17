@@ -1,0 +1,69 @@
+  /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*body*/
+body {
+    font-size: 16;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+body h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+/*header*/
+
+div#headerWrapper {
+    max-width: 64rem;
+    margin:auto;
+} 
+
+header {
+    background-image: url("../images/image01.jpg");
+    background-repeat: no-repeat;
+    padding: 1rem;
+    width: 100%;
+    /* background-size: cover;*/
+    height: 450px; 
+}
+
+    h1 {
+        padding: 1rem 1rem 0 1rem ;
+    }
+
+    h2 {
+        font-weight: 400;
+        padding: 0 1rem;
+    }
+
+    /* main */
+
+    div#mainWrapper {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+main h1 {
+    font-size: 2rem;
+}
+
+main p {
+    padding: 0 1rem;
+    
+}
+
+    div#footerWrapper {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+    footer {
+        background-color: #949fa5;
+        text-align: center;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+    }

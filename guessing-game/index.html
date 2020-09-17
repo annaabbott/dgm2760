@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anna Abbott">
+
+    <!-- tells phones not to lie about their width; not to enlarge font on turning sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--this is what's in the browser tab-->
+    <title>Inspector Clouseau</title>
+
+    <!--font family-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+    <!--font awesome
+    <script src="https://kit.fontawesome.com/a711695820.js" crossorigin="anonymous"></script>-->
+
+    <!--style sheets-->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    
+
+</head>
+
+<!--body-->
+    
+    <!--header below-->
+
+    <div id="headerWrapper">
+        <header class="clearfix">
+
+            <!-- <h1>Joe's Bed and Breakfast</h1>
+            <h2>Providing Good Nights and Good Mornings</h2> -->
+            <h1 id="companyName"></h1>
+            <h2 id="slogan"></h2>
+
+        </header>
+    </div>
+
+    <!--navigation below-->
+
+    <!--main below-->
+
+    <div id="mainWrapper">
+        <main>
+        <h1>High/Low Guessing Game</h1>    
+        <h2>This webpage demonstrates</h1>
+        <ul>
+            <li>Use of the math.random and math.floor methods</li>
+            <li>Use of the onclick event handler</li>
+            <li>Understanding the JavaScript switch statement</li>
+            <li>Understanding of nodes and appendChild</li>
+            <li>Using a GitHub repo and Netlify</li>
+        </ul>
+
+        <div id="gameArea">
+            <input id="guess" type="number" placeholder="000">
+            <button onclick="checkGuess()">Guess</button>
+        </div>
+
+    <!--footer below-->
+
+    <div id="footerWrapper">
+        <footer class="clearfix">
+            <p>&copy; 2020 &bull; Anna Abbott &bull; DGM 2760</p>
+        </footer>
+    </div>
+
+        <!--scripts-->
+    <script type="text/JavaScript" src="scripts/main.js"></script>
+
+</body>
+</html>

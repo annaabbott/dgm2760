@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anna Abbott">
+
+    <!-- tells phones not to lie about their width; not to enlarge font on turning sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--this is what's in the browser tab-->
+    <title>Joe's Bed and Breakfast</title>
+
+    <!--font family-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+    <!--font awesome
+    <script src="https://kit.fontawesome.com/a711695820.js" crossorigin="anonymous"></script>-->
+
+    <!--style sheets-->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    
+
+</head>
+
+<!--body-->
+<body>
+    
+    <!--header below-->
+
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <!--if there's a logo it goes here
+            <img src="images/fruit-stand-logo.png" alt="Fruit Stand Logo" class="logo">-->
+
+            <!-- <h1>Joe's Bed and Breakfast</h1>
+            <h2>Providing Good Nights and Good Mornings</h2> -->
+            <h1 id="companyName"></h1>
+            <h2 id="slogan"></h2>
+
+        </header>
+    </div>
+
+    <!--navigation below-->
+
+    <!--main below-->
+
+    <div id="mainWrapper">
+        <main>
+        <h1>Joe's Bed and Breakfast</h1>    
+        <h2>This webpage demonstrates</h1>
+            <ul>
+                <li>Building a webpage using HTML, CSS, and JavaScript</li>
+                <li>Including text and a background image in the header</li>
+                <li>Using JavaScript to dynamically create the header h1 and h2 elements and to insert text into those elements</li>
+                <li>Inserting the current date into a webpage with JavaScript</li>
+                <li>Using a GitHub repo and Netlify</li>
+            </ul>
+
+            <h2>Today is</h2>
+            <p id="date"></p>
+            <p id="greeting"></p>
+        </main>
+    </div>
+
+    <!--footer below-->
+
+    <div id="footerWrapper">
+        <footer class="clearfix">
+            <p>&copy; 2020 &bull; Anna Abbott &bull; DGM 2760</p>
+        </footer>
+    </div>
+
+        <!--scripts-->
+    <script type="text/JavaScript" src="scripts/main.js"></script>
+
+</body>
+</html>
