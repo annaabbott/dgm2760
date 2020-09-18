@@ -8,11 +8,53 @@ console.log(randomNumber);
 // get the user's guess. Compare to computer's number.
 let correctGuess = false;
 let totalGuesses = 0;
+let playerGuess = 0;
+
+guessDisplay.innerText = totalGuesses;
 
 function checkGuess() {
+    
     console.log("button is working");
+    totalGuesses++;
+    guessDisplay.innerText = totalGuesses;
+
+    playerGuess = parseInt(document.querySelector("#guess").value);
+    const feedback = document.querySelector("#feedback");
+    
     // make sure guess was in range, or ask again.
-    // print statement too low, too high, just right
+    if (playerGuess <1 || playerGuess > 15) {
+        feedback.innerText = "Please enter a number from 1 to 15."
+        totalGuesses -= 1
+        guessDisplay.innerText = totalGuesses
+    } else if (playerGuess === randomNumber) {
+        //then return congratulations
+        feedback.innerText = "Spot on! You guessed right."
+        awardRibbon()
+    } else if (playerGuess > randomNumber) {
+        //return too high 
+        feedback.innerText = "Too high! Try again."
+    } else {
+        //return too low
+        feedback.innerText = "Too low! Try again."
+    }
 }
 
 // award a ribbon based on number of guesses. 
+function awardRibbon() {
+    //blue for <=3
+    //red for 4-6
+    //yellow for >=7
+    switch(totalGuesses) {
+        case 1: 
+        case 2:
+        case 3:
+            //give a blue ribbon.
+            break
+        case 4:
+        case 5:
+        case 6:
+            //red
+            break;
+        case 7:
+    }
+}
