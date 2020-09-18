@@ -68,10 +68,15 @@ main p {
     
 }
 
+div#gameContainer {
+    display: flex;
+}
+
 main div#gameArea {
     height: 300px;
     background-color: #B2C9CD;
-    margin: 1rem;
+    margin-left: 1rem;
+
 }
 
 main div#gameArea input {
@@ -83,6 +88,15 @@ main div#gameArea input {
 
 main div#gameArea button {
     text-transform: uppercase;
+    
+}
+
+main div#ribbonArea {
+    height: 300px;
+    background-color: #B2C9CD;
+    margin-right: 1rem;
+    padding: 1rem;
+    width: 50%;
 }
 
     div#footerWrapper {

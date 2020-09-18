@@ -58,15 +58,18 @@
         <p>I'm thinking of a number between 0 and 15. Can you guess?</p>
         <p>Enter your number into the box below and click the "Guess" button. I will tell you if you are guessing too high or too low.</p>
         <p>Get it right in 3 tries or less and win a blue ribbon!</p>
-        <div id="gameArea">
-            <input id="guess" type="number" placeholder="number">
-            <button onclick="checkGuess()">Guess</button>
-            <h1 >Guesses</h1>
-            <p id="guessDisplay"></p>
-            <h1 >High/Low?</h1>
-            <p id="feedback"></p>
-        </div>
-
+        
+        <div id="gameContainer">
+            <div id="gameArea">
+                <input id="guess" type="number" placeholder="number">
+                <button onclick="checkGuess()">Guess</button>
+                <h1 >Guesses</h1>
+                <p id="guessDisplay"></p>
+                <h1 >High/Low?</h1>
+                <p id="feedback"></p>
+            </div>
+            <div id="ribbonArea"></div>
+    </div>
     <!--footer below-->
 
     <div id="footerWrapper">

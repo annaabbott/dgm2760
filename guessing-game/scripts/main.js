@@ -10,6 +10,11 @@ let correctGuess = false;
 let totalGuesses = 0;
 let playerGuess = 0;
 
+//set ribbon imgs as variables
+const blueRibbon = "../images/blue-ribbon.png";
+const yellowRibbon = "../images/yellow-ribbon.png";
+const redRibbon = "../images/red-ribbon.png"
+
 guessDisplay.innerText = totalGuesses;
 
 function checkGuess() {
@@ -47,14 +52,18 @@ function awardRibbon() {
     switch(totalGuesses) {
         case 1: 
         case 2:
-        case 3:
+        case 3: imgPath = blueRibbon;
             //give a blue ribbon.
             break
         case 4:
         case 5:
-        case 6:
+        case 6: imgPath = redRibbon;
             //red
             break;
-        case 7:
+        case 7: imgPath = yellowRibbon;
     }
+    const newImg = document.createElement("img"); 
+    newImg.setAttribute("src", imgPath);
+    const ribbon = document.querySelector("#ribbonArea");
+    ribbon.appendChild(newImg);
 }
