@@ -46,24 +46,37 @@ function checkGuess() {
 
 // award a ribbon based on number of guesses. 
 function awardRibbon() {
+    if (document.getElementById('award')) {
+        return;
+    }
+
     //blue for <=3
     //red for 4-6
     //yellow for >=7
     switch(totalGuesses) {
         case 1: 
         case 2:
-        case 3: imgPath = blueRibbon;
+        case 3:
             //give a blue ribbon.
-            break
+            imgPath = blueRibbon;
+            break;
+
         case 4:
         case 5:
-        case 6: imgPath = redRibbon;
+        case 6:
             //red
+            imgPath = redRibbon;
             break;
-        case 7: imgPath = yellowRibbon;
+
+        default: 
+            imgPath = yellowRibbon;
     }
+
     const newImg = document.createElement("img"); 
+    newImg.id = "award";
     newImg.setAttribute("src", imgPath);
     const ribbon = document.querySelector("#ribbonArea");
     ribbon.appendChild(newImg);
+
+    document.getElementById("guessBtn").disabled = true;
 }
