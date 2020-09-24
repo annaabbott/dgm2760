@@ -54,6 +54,7 @@ function getRandomIntInclusive(min, max) {
             name = "The future is unknown";
             break;
     }
+    
     return name;
   }
 
@@ -79,8 +80,7 @@ function getRandomIntInclusive(min, max) {
         default:
             message = "the future is unknown";
             break;
-    }
-    return message;
+    }return message;
   }
 
   const monthName = createMonthName(month);
