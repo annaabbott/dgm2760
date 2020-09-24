@@ -1,0 +1,82 @@
+  /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*body*/
+body {
+    font-size: 16;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #101010;
+}
+
+body h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+/*header*/
+
+div#headerWrapper {
+    max-width: 64rem;
+    margin:auto;
+} 
+
+header {
+    /*the linear-gradient, below, adds an overlay to the background image so I can use
+    colored text and keep color contrast acceptable. */
+    background-image:
+    /* linear-gradient(rgba(232,232,232,0.6), rgba(232,232,232,0.6)), */
+    url("../images/image01.jpg");
+    background-repeat: no-repeat;
+    padding: 1rem;
+    background-size: cover;
+    height: 363px; 
+}
+
+header h1 {
+        padding: 0 .5rem;
+    }
+
+header h2 {
+    font-weight: 400;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+    /* main */
+
+div#mainWrapper {
+    max-width: 64rem;
+    margin:auto;
+}
+
+main h1 {
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+main h2{
+    padding: 0 1rem;
+}
+
+main p {
+    padding: 0 1rem;
+    
+}
+
+
+    div#footerWrapper {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+    footer {
+        background-color: #FAB5E1;
+        
+        text-align: center;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+    }
