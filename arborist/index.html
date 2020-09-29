@@ -42,34 +42,47 @@
 
     <div id="mainWrapper">
         <main>
-        <h1>The Arborist</h1>    
-        <h2>This webpage demonstrates</h1>
-        <ul>
-            <li>Manipulating of an array</li>
-            <li>Error checking an array</li>
-            <li>Use of the sort method</li>
-            <li>Understanding of nodes and appendChild</li>
-            <li>Using a GitHub repo and Netlify</li>
-        </ul>
-        <h2>Array Manipulation</h2>
+            <h1>The Arborist</h1>    
+            <h2>This webpage demonstrates</h1>
+            <ul>
+                <li>Manipulating of an array</li>
+                <li>Error checking an array</li>
+                <li>Use of the sort method</li>
+                <li>Understanding of nodes and appendChild</li>
+                <li>Using a GitHub repo and Netlify</li>
+            </ul>
+            <h2>Array Manipulation</h2>
 
-        <h3>Adding an Item to an Array</h3>
-        <button id="addRedwood">Add a redwood tree to your cart</button>
-        <button id="addPear">Add a pear tree to your cart</button>
+            <div id="arrayContainer">
+                <div id="buttonContainer">
+                    <h3>Adding an Item to an Array</h3>
+                    <button id="addRedwood">Add a redwood tree to your cart</button>
+                    <button id="addPear">Add a pear tree to your cart</button>
 
-        <h3>Removing an Item from an Array</h3>
-        <button id="removeFirstTree">Remove the first tree from your cart</button>
-        <button id="removeSecondTree">Remove the second tree from your cart</button>
-        <button id="removeLastTree">Remove the last tree from your cart</button>
+                    <h3>Removing an Item from an Array</h3>
+                    <button id="removeFirstTree">Remove the first tree from your cart</button>
+                    <button id="removeSecondTree">Remove the second tree from your cart</button>
+                    <button id="removeLastTree">Remove the last tree from your cart</button>
 
-        <h3>Altering the Items in the Array</h3>
-        <button id="sortTrees">Sort the trees in the cart A-Z</button>
-        <button id="lowerCase">Change the text of items to lower case</button>
+                    <h3>Altering the Items in the Array</h3>
+                    <button id="sortTrees">Sort the trees in the cart A-Z</button>
+                    <button id="lowerCase">Change the text of items to lower case</button>
 
-        <h3>Getting information about Items in the Array</h3>
-        <button id="nameTree3">What is the name of the third tree?</button>
-        <button id="nameTree4">What is the name of the fourth tree?</button>
+                    <h3>Getting information about Items in the Array</h3>
+                    <button id="nameTree3">What is the name of the third tree?</button>
+                    <button id="nameTree4">What is the name of the fourth tree?</button>
+                </div> <!--end buttonContainer-->
 
+                <div id="asideContainer">
+                    <aside>
+                        <h3>Your Cart</h3>
+                        <div id="displayResults"></div>
+                        <h3>Error Messages</h3>
+                        <div id="error"></div>
+                    </aside>
+                </div> <!--end asideContainer-->
+            </div>     <!--end arrayContainer--> 
+        </main>
     <!--footer below-->
 
     <div id="footerWrapper">

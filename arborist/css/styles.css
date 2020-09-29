@@ -57,6 +57,16 @@ header h2 {
         margin:auto;
     }
 
+div#arrayContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#displayResults {
+    border-bottom: 5px solid #e5d5be;
+}
+
+
 main h1 {
     font-size: 2rem;
     padding: 0 1rem;
