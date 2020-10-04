@@ -66,6 +66,14 @@ div#displayResults {
     border-bottom: 5px solid #e5d5be;
 }
 
+div#displayResults span {
+    font-weight: 800;
+}
+
+main div#buttonContainer span {
+    margin-left: 1rem;
+}
+
 
 main h1 {
     font-size: 2rem;
