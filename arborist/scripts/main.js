@@ -101,7 +101,7 @@ document.querySelector("#addPear").onclick = () => {
             displayTree4.textContent = tree4
         } else {
             errorElement.textContent = "Not enough trees in list";
-            displayTree3.textContent = ""
+            displayTree4.textContent = ""
         }
         listTrees();
     }
