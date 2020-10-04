@@ -52,10 +52,10 @@ header h2 {
 
     /* main */
 
-    div#mainWrapper {
-        max-width: 64rem;
-        margin:auto;
-    }
+div#mainWrapper {
+    max-width: 64rem;
+    margin:auto;
+}
 
 div#arrayContainer {
     display: flex;
@@ -74,6 +74,9 @@ main div#buttonContainer span {
     margin-left: 1rem;
 }
 
+div#error {
+    color: red;
+}
 
 main h1 {
     font-size: 2rem;
