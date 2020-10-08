@@ -77,7 +77,10 @@ main button {
 
 main p {
     padding: 0 1rem;
-    
+}
+
+main p span {
+    font-weight: bold;
 }
 
 div#textareaContainer {
