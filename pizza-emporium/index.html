@@ -7,7 +7,7 @@
     <!-- tells phones not to lie about their width; not to enlarge font on turning sideways-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-    <title>Browser Tab</title>
+    <title>Pizza Emporium</title>
 
     <!--font family-->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
@@ -42,17 +42,41 @@
 
     <div id="mainWrapper">
         <main>
-        <h1>Page Title</h1>    
-        <h2>This webpage demonstrates</h1>
+        <h1>Pizza Emporium</h1>    
+        <h2>This webpage demonstrates</h2>
         <ul>
-            <li>Use of the math.random and math.floor methods</li>
-            <li>Use of the onclick event handler</li>
-            <li>Understanding the JavaScript switch statement</li>
-            <li>Understanding of nodes and appendChild</li>
+            <li>Creating objects with properties and methods</li>
+            <li>Changing an object's properties and methods</li>
+            <li>Displaying text on the webpage to show results of methods being run</li>
             <li>Using a GitHub repo and Netlify</li>
         </ul>
-        <h2>JavaScript Demonstration</h2>
-        
+        <h2>Pizza Order Form</h2>
+
+        <h3>Choose the Crust</h3>
+        <input type="radio" id="regularCrust" value="regular"checked>
+        <label for="regular">Regular</label>
+        <input type="radio" id="thinCrust" value="thin">
+        <label for="thin">Thin</label>
+
+        <h3>Choose the Toppings</h3>
+        <input type="radio" id="pepperoni" value="pepperoni"checked>
+        <label for="pepperoni">Pepperoni</label>
+        <input type="radio" id="tomato" value="tomato">
+        <label for="tomato">Tomato</label>
+
+        <h3>Choose the Size</h3>
+        <input type="radio" id="small" value="small"checked>
+        <label for="small">Small</label>
+        <input type="radio" id="large" value="large">
+        <label for="large">Large</label>
+
+        <h3>Shopping List</h3>
+        <button id="buildBtn">Build Pizza</button>
+
+        <h3>Build the Pizza</h3>
+        <button id="listBtn">Write List</button>
+
+        <h3>Messages</h3>
     <!--footer below-->
 
     <div id="footerWrapper">
