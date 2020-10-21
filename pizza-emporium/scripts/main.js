@@ -9,8 +9,8 @@ const pizza = {
     size : "small",
     buildPizza: function() {
         console.log("buildPizza method was called");
-        message = `To make a ${pizza.size} pizza on a ${pizza.crust} crust with ${pizza.topping} and cheese,`
-        document.querySelector("#choicesFeedback").textContent = message
+        message = `To make a ${pizza.size} pizza on a ${pizza.crust} crust with ${pizza.topping} and cheese,`;
+        document.querySelector("#choicesFeedback").textContent = message;
     },
     writeList: () => {
         console.log("writeList method was called");
@@ -20,8 +20,8 @@ const pizza = {
         let cheese = 2;
         if (pizza.size === "large") cheese *=2;
         //do the same for size large
-        message = `you will need to purchase ${flour} cups of flour, ${cheese} cups mozzerella cheese, and 8 oz. of sliced ${pizza.topping}.`
-        document.querySelector("#listFeedback").textContent = message
+        message = `you will need to purchase ${flour} cups of flour, ${cheese} cups mozzerella cheese, and 8 oz. of sliced ${pizza.topping}.`;
+        document.querySelector("#listFeedback").textContent = message;
 
     }
 };
