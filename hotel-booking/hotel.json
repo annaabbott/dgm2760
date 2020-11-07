@@ -1,0 +1,28 @@
+{
+    "hotels": [
+        {
+            "name": "Fawlty Towers",
+            "rooms": "20",
+            "gym": "No",
+            "roomTypes": ["King", "Queen", "Double Twin"],
+            "address": "123 Basil Place, Torquay",
+            "picture": "room1.jpg"
+        },
+        {
+            "name": "Grand Budapest",
+            "rooms": "150",
+            "gym": "Yes",
+            "roomTypes": ["Suite", "Double King", "Double Queen"],
+            "address": "1000 Main, Zubrowka",
+            "picture": "room2.jpg"
+        },
+        {
+            "name": "Great Northern Hotel",
+            "rooms": "50",
+            "gym": "Yes",
+            "roomTypes": ["King", "Double Queen", "Single Queen"],
+            "address": "1920 Salish, Twin Peaks",
+            "picture": "room1.jpg"
+        }
+    ]
+}
