@@ -1,6 +1,7 @@
 {
     "hotels": [
         {
+            "id":  "fawltyTowers",
             "name": "Fawlty Towers",
             "rooms": "20",
             "gym": "No",
@@ -9,6 +10,7 @@
             "picture": "room1.jpg"
         },
         {
+            "id":  "grandBudapest",
             "name": "Grand Budapest",
             "rooms": "150",
             "gym": "Yes",
@@ -17,6 +19,7 @@
             "picture": "room2.jpg"
         },
         {
+            "id":  "greatNorthernHotel",
             "name": "Great Northern Hotel",
             "rooms": "50",
             "gym": "Yes",

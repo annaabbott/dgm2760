@@ -26,13 +26,13 @@ div#headerWrapper {
 header {
     /*the linear-gradient, below, adds an overlay to the background image so I can use
     colored text and keep color contrast acceptable. */
-    /* background-image:
+    background-image:
     linear-gradient(rgba(232,232,232,0.6), rgba(232,232,232,0.6)),
-    url("../images/image01.jpg"); */
+    url("../images/image01.jpg");
     background-repeat: no-repeat;
     padding: 1rem;
     background-size: cover;
-    height: 300px; 
+    height: 450px; 
 }
 
 header h1 {

@@ -11,7 +11,19 @@ async function getHotelData() {
 }
 
 let hotelData = {};
+console.log(hotelData);
+getHotelData().then(data => hotelData = data);
 
-getHotelData().then(data => {
-    return hotelData = data;
-});
+
+document.querySelector("#fawltyTowers").addEventListener("click",hotelInfo)
+
+function hotelInfo(event) {
+    if (!hotelData.hotels) {
+        return;
+    }
+
+    let hotelChoice = hotelData.hotels.find(hotel => {
+        return event.target.id === hotel.id
+    });
+    console.log(hotelChoice);
+}
