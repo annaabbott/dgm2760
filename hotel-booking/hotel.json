@@ -5,27 +5,35 @@
             "name": "Fawlty Towers",
             "rooms": "20",
             "gym": "No",
+            "meeting": "No",
             "roomTypes": ["King", "Queen", "Double Twin"],
-            "address": "123 Basil Place, Torquay",
-            "picture": "room1.jpg"
+            "address": "123 Asheldon Road, Torquay, Devon, England",
+            "picture": "./images/room1.jpeg",
+            "phone": "011 44 1392 123456"
         },
         {
             "id":  "grandBudapest",
             "name": "Grand Budapest",
             "rooms": "150",
             "gym": "Yes",
+            "meeting": "Yes",
             "roomTypes": ["Suite", "Double King", "Double Queen"],
-            "address": "1000 Main, Zubrowka",
-            "picture": "room2.jpg"
+            "address": "1000 Main, Capitol City, Zubrowka",
+            "picture": "./images/room2.jpg",
+            "phone": "+49-30 987654"
+
         },
         {
             "id":  "greatNorthernHotel",
             "name": "Great Northern Hotel",
             "rooms": "50",
             "gym": "Yes",
+            "meeting": "Yes",
             "roomTypes": ["King", "Double Queen", "Single Queen"],
-            "address": "1920 Salish, Twin Peaks",
-            "picture": "room1.jpg"
+            "address": "1920 Salish, Twin Peaks, WA",
+            "picture": "./images/room3.jpg",
+            "phone": "(425) 123-4567"
+
         }
     ]
 }
