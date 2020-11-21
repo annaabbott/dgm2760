@@ -1,21 +1,41 @@
-document.querySelector("header >h1").innerText = "2020 Virtual Vacations";
-document.querySelector("header > h2").innerText = "While the virus keeps us home, we can still pretend";
+function getHotelData() {
+    const promise = fetch("./hotel.json")
 
-async function getHotelData() {
-    try {
-        const response = await fetch("./hotel.json");
-        return await response.json();
-    } catch (error) {
-        console.error(error)
+    const resolve = function (httpResponse) {
+        console.log('got a response')
+        return httpResponse.json();
     }
+
+    function reject(error) {
+        console.error(error);
+    }
+
+    return promise
+        .then(resolve)
+        .catch(reject); 
 }
 
+// async function getHotelData() {
+//     try {
+//         const response = await fetch("./hotel.json");
+//         return await response.json();
+//     } catch (error) {
+//         console.error(error)
+//     }
+// }
+
 let hotelData = {};
-console.log(hotelData);
-getHotelData().then(data => hotelData = data);
+const promise = getHotelData();
+
+promise.then(function (data) {
+    console.log('got the data')
+    hotelData = data;
+});
 
 
 document.querySelector("#fawltyTowers").addEventListener("click",hotelInfo)
+document.querySelector("#grandBudapest").addEventListener("click",hotelInfo)
+document.querySelector("#greatNorthernHotel").addEventListener("click",hotelInfo)
 
 function hotelInfo(event) {
     if (!hotelData.hotels) {
@@ -26,4 +46,6 @@ function hotelInfo(event) {
         return event.target.id === hotel.id
     });
     console.log(hotelChoice);
+    document.querySelector("#hotelDisplay").textContent = `${hotelChoice.name}`;
 }
+
