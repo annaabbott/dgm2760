@@ -1,28 +1,12 @@
-function getHotelData() {
-    const promise = fetch("./hotel.json")
 
-    const resolve = function (httpResponse) {
-        console.log('got a response')
-        return httpResponse.json();
+async function getHotelData() {
+    try {
+        const response = await fetch("./hotel.json");
+        return await response.json();
+    } catch (error) {
+        console.error(error)
     }
-
-    function reject(error) {
-        console.error(error);
-    }
-
-    return promise
-        .then(resolve)
-        .catch(reject); 
 }
-
-// async function getHotelData() {
-//     try {
-//         const response = await fetch("./hotel.json");
-//         return await response.json();
-//     } catch (error) {
-//         console.error(error)
-//     }
-// }
 
 let hotelData = {};
 const promise = getHotelData();
