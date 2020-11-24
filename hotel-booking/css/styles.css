@@ -27,7 +27,7 @@ header {
     /*the linear-gradient, below, adds an overlay to the background image so I can use
     colored text and keep color contrast acceptable. */
     background-image:
-    linear-gradient(rgba(232,232,232,0.6), rgba(232,232,232,0.6)),
+    linear-gradient(rgba(232,232,232,0.6), rgba(232,232,232,0.2)),
     url("../images/image01.jpg");
     background-repeat: no-repeat;
     padding: 1rem;
@@ -61,29 +61,62 @@ main h1 {
 main h2{
     padding: 0 1rem;
 }
+main h3{
+    padding: 0 1rem;
+}
 
 main p {
     padding: 0 1rem;
     
 }
 
+
 ul#linksContainer {
-    display: flex;
+    background-color: #6A748F;
     list-style-type: none;
+    margin: 0 1rem 1rem 1rem;
+    padding: 0;
 }
 
-ul li a{
-    padding: 0 2rem;
+ul#linksContainer li {
+    float: left;
+    width: 33%;
 }
+
+ul#linksContainer li a{
+    display: block;
+    border-left: .5rem solid #fff;
+    padding: .5rem 0;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+ul#linksContainer li:first-child a {
+    border-left: none;
+}
+
+div #hotelDisplay {
+    background-color: #D6C7BC;
+    padding: 1rem;
+}
+
+
     div#footerWrapper {
         max-width: 64rem;
         margin:auto;
     }
 
     footer {
-        background-color: #E5E5E5;
+        background-color:#D6C7BC;
         
         text-align: center;
         padding-top: .25rem;
         padding-bottom: .25rem;
     }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
