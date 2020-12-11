@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anna Abbott">
+
+    <!-- tells phones not to lie about their width; not to enlarge font on turning sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>D&D Spell Deck</title>
+
+    <!--font family-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+    <!--font awesome
+    <script src="https://kit.fontawesome.com/a711695820.js" crossorigin="anonymous"></script>-->
+
+    <!--style sheets-->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+
+</head>
+
+<!--body-->
+    
+    <!--header below-->
+
+    <div id="headerWrapper">
+        <header class="clearfix">
+
+            <h1>Dungeons & Dragons 5e Spells</h1>    
+            <h2 id="slogan"></h2>
+
+        </header>
+    </div>
+
+    <!--navigation below-->
+
+    <!--main below-->
+
+    <div id="mainWrapper">
+        <main>
+            <form>
+                <label for="class">Character class:</label>
+                <select id="class" name="class">
+                    <option value="bard">Bard</option>
+                    <option value="cleric">Cleric</option>
+                    <option value="druid">Druid</option>
+                    <option value="paladin">Paladin</option>
+                    <option value="ranger">Ranger</option>
+                    <option value="sorcerer">Sorcerer</option>
+                    <option value="warlock">Warlock</option>
+                    <option value="wizard">Wizard</option>
+                </select>
+
+                <label for="level">Spell level:</label>
+                <select id="level" name="level">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </form>
+        </main>
+    </div>
+    <!--footer below-->
+
+    <div id="footerWrapper">
+        <footer class="clearfix">
+            <p>&copy; 2020 &bull; Anna Abbott &bull; DGM 2760</p>
+        </footer>
+    </div>
+
+        <!--scripts-->
+    <script type="text/JavaScript" src="scripts/main.js"></script>
+
+</body>
+</html>
