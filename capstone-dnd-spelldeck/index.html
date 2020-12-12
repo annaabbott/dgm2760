@@ -42,17 +42,17 @@
     <div id="mainWrapper">
         <main>
             <form>
-                <label for="class">Character class:</label>
-                <select id="class" name="class">
-                    <option value="bard">Bard</option>
-                    <option value="cleric">Cleric</option>
-                    <option value="druid">Druid</option>
-                    <option value="paladin">Paladin</option>
-                    <option value="ranger">Ranger</option>
-                    <option value="sorcerer">Sorcerer</option>
-                    <option value="warlock">Warlock</option>
-                    <option value="wizard">Wizard</option>
-                </select>
+                <label for="characterClass">Character class:</label>    <!--to do this file:-->
+                <select id="characterClass" name="characterClass">      <!--add div to create display for spell list-->
+                    <option value="bard">Bard</option>                  <!--attach spellsListBtn to event handler -->
+                    <option value="cleric">Cleric</option>              <!--do spells show up in displaySpellsList div? in DOM?-->
+                    <option value="druid">Druid</option>                <!--description of spell should display under name.-->
+                    <option value="paladin">Paladin</option>            <!--button: add to my deck-->
+                    <option value="ranger">Ranger</option>              <!--create div to display deck:-->
+                    <option value="sorcerer">Sorcerer</option>          <!--attach add to deck button to event handler-->
+                    <option value="warlock">Warlock</option>            <!--create cards: level, casting time, components, range, duration,-->
+                    <option value="wizard">Wizard</option>              <!--create cards: ritual, concentration, description, at higher levels-->
+                </select>                                               
 
                 <label for="level">Spell level:</label>
                 <select id="level" name="level">
@@ -67,7 +67,11 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                 </select>
+                <button id="spellsListBtn" type="button">Display Spells</button> 
             </form>
+
+            <div id="feedback"></div>
+            <div id="displaySpellsList">[this is a list]</div>
         </main>
     </div>
     <!--footer below-->
@@ -80,6 +84,7 @@
 
         <!--scripts-->
     <script type="text/JavaScript" src="scripts/main.js"></script>
+    <script type="text/JavaScript" src="scripts/api.js"></script>
 
 </body>
 </html>
