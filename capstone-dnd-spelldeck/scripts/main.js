@@ -10,8 +10,10 @@ async function displaySpells() {
         console.log(spells)
         spells.forEach(result => {
             const spellDiv = document.createElement("div");
-            spellDiv.textContent = result.name;
+            spellDiv.textContent = 
+            result.name;
             spellDiv.id = result.index;
+            spellDiv.className = "spellListItem"
             document.querySelector("#displaySpellsList").appendChild(spellDiv);
             spellDiv.addEventListener("click",() => showSpellDescription(result));
         });
@@ -39,7 +41,7 @@ async function showSpellDescription(spellInfo) {
         spellBook.appendChild(newCard);
     
     });
-    button.textContent = "Add to my Deck";
+    button.textContent = "Add to my Spellbook";
     cardDiv.appendChild(button);
     spellDesc.appendChild(cardDiv);
 }
