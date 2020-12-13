@@ -61,5 +61,12 @@ async function searchSpells(characterClass, level) {                    //write 
     }
     return spells;
 }
-
-                                                                     
+                                                                        // call api (again!) to fetch spell info.
+async function getSpellInfo(index) {
+    try {
+        const result = await fetch(`${apiRoot}/spells/${index}`);
+        return await result.json();
+    } catch (err) {
+        throw new Error (`Error fetching info about spell ${index}: ${err.message}`);
+    }
+}                                                                                                                                        
